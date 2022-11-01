@@ -1,6 +1,5 @@
 package com.stv.factory.factorypages;
 
-import com.gargoylesoftware.htmlunit.html.DomNode;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -19,6 +18,8 @@ public class NewCustomerPage extends FactoryPage {
     private WebElement firstNameWarning;
     @FindBy(xpath = "//span[contains(text(),'Please enter your surname')]")
     private WebElement lastNameWarning;
+    @FindBy(className = "checkoutlightbox")
+    private WebElement termsAndConditionsLink;
 
     public boolean isNewCustomerPageDisplayed() {
         return continueButtonLarge.isDisplayed();
@@ -49,5 +50,9 @@ public class NewCustomerPage extends FactoryPage {
 
     public boolean lastNameWarningDisplayed() {
         return lastNameWarning.isDisplayed();
+    }
+
+    public void clickOnTermsLink() {
+        termsAndConditionsLink.click();
     }
 }
