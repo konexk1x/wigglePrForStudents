@@ -2,8 +2,8 @@ package com.stv.bdd_framework.steps;
 
 import com.stv.factory.factorypages.MainFactoryPage;
 import com.stv.factory.factorytests.BasicFactoryTest;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -23,7 +23,7 @@ public class MainPageSteps extends BasicFactoryTest {
         mainFactoryPage.clickOnTrustButton();
     }
 
-    @And("Click on Your account link")
+    @When("Click on Your account link")
     public void clickOnYourAccountLink() {
         mainFactoryPage.clickOnAccountLink();
     }
