@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 public class NewCustomerPage extends FactoryPage {
     @FindBy(className = "bem-button--checkout-large")
     private WebElement continueButtonLarge;
-
     @FindBy(name = "RegisterModel.Email")
     private WebElement addressField;
     @FindBy(xpath = "//span[contains(text(),'Please enter your email address')]")

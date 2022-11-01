@@ -22,6 +22,6 @@ Feature: Final_auto_test
       | email_address       |
       | test_test@gmail.com |
 
-    Scenario: 04. Terms & Conditions
-      When Click on Terms & Conditions link
-      Then Wiggle Terms & Conditions page appears
+  Scenario: 04. Terms & Conditions
+    When Click on Terms & Conditions link
+    Then Wiggle Terms & Conditions page appears
