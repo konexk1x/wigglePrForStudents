@@ -12,3 +12,11 @@ Feature: Final_auto_test
     Examples:
       | email_address       |
       | test_test@gmail.com |
+
+  Scenario Outline: 03. Trying to register
+    Given Checking our e-mail "<email_address>" visible
+    When Scroll down
+    And Click on Another Continue button
+    Examples:
+      | email_address       |
+      | test_test@gmail.com |
