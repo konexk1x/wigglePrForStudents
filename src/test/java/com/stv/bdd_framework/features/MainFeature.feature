@@ -17,6 +17,7 @@ Feature: Final_auto_test
     Given Checking our e-mail "<email_address>" visible
     When Scroll down
     And Click on Another Continue button
+    Then Warnings appear
     Examples:
       | email_address       |
       | test_test@gmail.com |

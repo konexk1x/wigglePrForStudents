@@ -25,11 +25,19 @@ public class NewCustomerPageSteps extends BasicFactoryTest {
 
     @When("Scroll down")
     public void scrollDown() {
-            js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
-        }
+        js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+    }
 
     @And("Click on Another Continue button")
     public void clickOnAnotherContinueButton() {
         newCustomerPage.continueButtonLargeClick();
+    }
+
+    @Then("Warnings appear")
+    public void warningsAppear() {
+        Assert.assertTrue(newCustomerPage.emailConfirmWarningDisplayed(), "E-mail confirmed");
+        Assert.assertTrue(newCustomerPage.passwordCreationWarningDisplayed(), "Password confirmed");
+        Assert.assertTrue(newCustomerPage.firstNameWarningDisplayed(), "First Name confirmed");
+        Assert.assertTrue(newCustomerPage.lastNameWarningDisplayed(), "last Name confirmed");
     }
 }
