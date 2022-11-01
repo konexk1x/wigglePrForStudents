@@ -6,9 +6,9 @@ Feature: Final_auto_test
     Then New customer form is visible
 
   Scenario Outline: Create new customer
-    Given The user inputs e-mail "<email_address>" in textarea
+    Given The user inputs e-mail "<email_address>"
     When Click on Continue button
     Then New Customer page is visible
     Examples:
       | email_address     |
-      | test_mail@mail.ru |
+      | test_test@mail.ru |

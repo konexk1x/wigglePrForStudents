@@ -9,10 +9,10 @@ public class LoginPage extends FactoryPage {
 
     @FindBy(id = "col-sm-6 bem-checkout__new-customer")
     private WebElement newCustomerForm;
-    @FindBy(id = "DualRegisterEmailModel_Email")
+    @FindBy(name = "DualRegisterEmailModel.Email")
     private WebElement emailAddressField;
 
-    @FindBy(id = "qa-dual-register")
+    @FindBy(xpath = "//button[contains(text(),'Continue')]")
     private WebElement continueButton;
 
     public boolean isLoginContainerDisplayed() {

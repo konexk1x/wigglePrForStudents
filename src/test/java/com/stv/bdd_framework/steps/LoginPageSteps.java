@@ -15,7 +15,7 @@ public class LoginPageSteps extends BasicFactoryTest {
         Assert.assertTrue(loginPage.isNewCustomerFormDisplayed(), "New Customer Form isn't visible");
     }
 
-    @Given("The user inputs e-mail {string} in textarea")
+    @Given("The user inputs e-mail {string}")
     public void theUserInputsEMail(String emailAddress) {
         loginPage.inputEmail(emailAddress);
     }
