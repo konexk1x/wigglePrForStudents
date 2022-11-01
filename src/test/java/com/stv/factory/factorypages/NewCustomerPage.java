@@ -17,8 +17,6 @@ public class NewCustomerPage extends FactoryPage {
     private WebElement firstNameWarning;
     @FindBy(xpath = "//span[contains(text(),'Please enter your surname')]")
     private WebElement lastNameWarning;
-    @FindBy(className = "checkoutlightbox")
-    private WebElement termsAndConditionsLink;
 
     public boolean isNewCustomerPageDisplayed() {
         return continueButtonLarge.isDisplayed();
@@ -51,7 +49,4 @@ public class NewCustomerPage extends FactoryPage {
         return lastNameWarning.isDisplayed();
     }
 
-    public void clickOnTermsLink() {
-        termsAndConditionsLink.click();
-    }
 }
