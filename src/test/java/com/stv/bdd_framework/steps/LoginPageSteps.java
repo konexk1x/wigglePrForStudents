@@ -24,4 +24,5 @@ public class LoginPageSteps extends BasicFactoryTest {
     public void clickOnContinueButton() {
         loginPage.clickOnContinueButton();
     }
+
 }

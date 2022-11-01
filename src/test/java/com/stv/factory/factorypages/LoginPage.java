@@ -7,7 +7,7 @@ public class LoginPage extends FactoryPage {
     @FindBy(className = "bem-checkout__login-container")
     private WebElement loginContainer;
 
-    @FindBy(id = "col-sm-6 bem-checkout__new-customer")
+    @FindBy(id = "NewCustomer")
     private WebElement newCustomerForm;
     @FindBy(name = "DualRegisterEmailModel.Email")
     private WebElement emailAddressField;
@@ -30,4 +30,5 @@ public class LoginPage extends FactoryPage {
     public void clickOnContinueButton() {
         continueButton.click();
     }
+
 }
