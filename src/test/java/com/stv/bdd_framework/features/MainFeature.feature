@@ -10,5 +10,5 @@ Feature: Final_auto_test
     When Click on Continue button
     Then New Customer page is visible
     Examples:
-      | email_address     |
-      | test_test@mail.ru |
+      | email_address       |
+      | test_test@gmail.com |
