@@ -23,8 +23,7 @@ public class LoginPage extends FactoryPage {
         return newCustomerForm.isDisplayed();
     }
 
-    public void inputEmail(String emailAddress) {
-        emailAddressField.sendKeys(emailAddress);
+    public void inputEmail(String emailAddress) {emailAddressField.sendKeys(emailAddress);
     }
 
     public void clickOnContinueButton() {
