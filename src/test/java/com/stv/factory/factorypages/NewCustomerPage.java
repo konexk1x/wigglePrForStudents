@@ -1,6 +1,5 @@
 package com.stv.factory.factorypages;
 
-import com.gargoylesoftware.htmlunit.html.DomElement;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -52,5 +51,7 @@ public class NewCustomerPage extends FactoryPage {
         return lastNameWarning.isDisplayed();
     }
 
-    public void termsAndConditionsLinkClick() { termsAndConditionsLink.click(); }
+    public void termsAndConditionsLinkClick() {
+        termsAndConditionsLink.click();
+    }
 }
