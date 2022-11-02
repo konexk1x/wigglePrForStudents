@@ -6,4 +6,8 @@ import org.openqa.selenium.support.FindBy;
 public class TermsAndConditionsPage extends FactoryPage {
     @FindBy(className = "bem-dialogue__container")
     private WebElement TermsAndConditions;
+
+    public boolean isTermsAndConditionsPageDisplayed() {
+        return TermsAndConditions.isDisplayed();
+    }
 }

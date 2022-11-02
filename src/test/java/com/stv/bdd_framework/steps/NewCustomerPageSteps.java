@@ -45,4 +45,5 @@ public class NewCustomerPageSteps extends BasicFactoryTest {
     public void clickOnTermsConditionsLink() {
         newCustomerPage.termsAndConditionsLinkClick();
     }
+
 }

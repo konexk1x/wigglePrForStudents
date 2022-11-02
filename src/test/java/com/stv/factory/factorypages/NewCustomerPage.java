@@ -17,7 +17,7 @@ public class NewCustomerPage extends FactoryPage {
     private WebElement firstNameWarning;
     @FindBy(xpath = "//span[contains(text(),'Please enter your surname')]")
     private WebElement lastNameWarning;
-    @FindBy(xpath = "//a[contains(text(),'Terms & conditions')]")
+    @FindBy(xpath = "//a[contains(text(), 'Terms & conditions')]")
     private WebElement termsAndConditionsLink;
 
     public boolean isNewCustomerPageDisplayed() {
