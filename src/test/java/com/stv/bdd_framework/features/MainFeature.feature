@@ -10,7 +10,7 @@ Feature: Final_auto_test
     When Click on Continue button
     Then New Customer page is visible
     Examples:
-      | email_address    |
+      | email_address       |
       | test_mail@gmail.com |
 
   Scenario Outline: 03. Trying to register
@@ -19,5 +19,5 @@ Feature: Final_auto_test
     And Click on Another Continue button
     Then Warnings appear
     Examples:
-      | email_address    |
+      | email_address       |
       | test_mail@gmail.com |
