@@ -14,6 +14,8 @@ public class LoginPage extends FactoryPage {
 
     @FindBy(xpath = "//button[contains(text(),'Continue')]")
     private WebElement continueButton;
+    @FindBy(id = "forgotten-password")
+    private WebElement forgottenPasswordLink;
 
     public boolean isLoginContainerDisplayed() {
         return loginContainer.isDisplayed();
@@ -23,11 +25,15 @@ public class LoginPage extends FactoryPage {
         return newCustomerForm.isDisplayed();
     }
 
-    public void inputEmail(String emailAddress) {emailAddressField.sendKeys(emailAddress);
+    public void inputEmail(String emailAddress) {
+        emailAddressField.sendKeys(emailAddress);
     }
 
     public void clickOnContinueButton() {
         continueButton.click();
     }
 
+    public void clickOnForgottenPasswordLink() {
+        forgottenPasswordLink.click();
+    }
 }
