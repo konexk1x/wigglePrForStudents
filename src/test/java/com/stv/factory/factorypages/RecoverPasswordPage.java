@@ -9,6 +9,8 @@ public class RecoverPasswordPage extends FactoryPage {
     private WebElement resetButton;
     @FindBy(id = "Email-error")
     private WebElement warningMessage;
+    @FindBy(id = "Email")
+    private WebElement emailField;
 
     public void clickOnResetButton() {
         resetButton.click();
@@ -16,5 +18,9 @@ public class RecoverPasswordPage extends FactoryPage {
 
     public boolean isWarningMessageDisplayed() {
         return warningMessage.isDisplayed();
+    }
+
+    public void enterUserEmail(String email) {
+        emailField.sendKeys(email);
     }
 }
