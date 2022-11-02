@@ -40,4 +40,9 @@ public class NewCustomerPageSteps extends BasicFactoryTest {
         Assert.assertTrue(newCustomerPage.firstNameWarningDisplayed(), "First Name confirmed");
         Assert.assertTrue(newCustomerPage.lastNameWarningDisplayed(), "last Name confirmed");
     }
+
+    @When("Click on Terms&Conditions link")
+    public void clickOnTermsConditionsLink() {
+        newCustomerPage.termsAndConditionsLinkClick();
+    }
 }

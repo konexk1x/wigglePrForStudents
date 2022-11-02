@@ -21,3 +21,7 @@ Feature: Final_auto_test
     Examples:
       | email_address       |
       | test_mail@gmail.com |
+
+  Scenario: 04. Go to Terms&Conditions
+    When Click on Terms&Conditions link
+    Then Terms&Conditions page is visible
