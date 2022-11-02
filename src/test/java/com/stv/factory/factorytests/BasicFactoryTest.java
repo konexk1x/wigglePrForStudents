@@ -23,7 +23,7 @@ public class BasicFactoryTest {
     }
 
     @AfterClass
-    public void afterClass() throws Exception {
+    public void afterClass() {
         getDriver().quit();
     }
 }
