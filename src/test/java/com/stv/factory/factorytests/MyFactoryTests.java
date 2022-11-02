@@ -20,5 +20,4 @@ public class MyFactoryTests extends BasicFactoryTest {
         Assert.assertTrue(recoverPasswordPage.isWarningMessageDisplayed(), "Warning message isn't visible");
     }
 
-
 }
